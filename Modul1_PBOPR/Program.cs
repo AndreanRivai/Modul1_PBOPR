@@ -7,33 +7,6 @@ using System.Threading.Tasks;
 namespace Modul1_PBOPR
 {
 
-    class Ban
-    {
-        public String merk;
-
-        public void TampilkanMerkBan(string merk)
-        {
-            Console.WriteLine("Mobil ini menggunakan ban merk " + merk);
-        }
-    }
-    class Michelin : Ban
-    {
-        public Michelin()
-        {
-            merk = "Michelin";
-            TampilkanMerkBan(merk);
-        }
-    }
-
-    class Bridgestone : Ban
-    {
-        public Bridgestone()
-        {
-            merk = "Bridgestone";
-
-        }
-    }
-
     class Mobil
     {
         public string merk;
@@ -49,10 +22,10 @@ namespace Modul1_PBOPR
             System.Console.WriteLine("Mesin mobil " + merk + " bertipe " + tipe + " mati");
         }
 
-        public void NyalakanLampu()
-        {
-            Console.WriteLine("Lampu mobil " + merk + " bertipe " + tipe + " menyala");
-        }
+        // public void NyalakanLampu()
+        // {
+        //    Console.WriteLine("Lampu mobil " + merk + " bertipe " + tipe + " menyala");
+        // }
     }
 
     class Toyota : Mobil
@@ -144,7 +117,32 @@ namespace Modul1_PBOPR
         }
     }
 
-    
+    class Ban
+    {
+        public String merk;
+
+        public void TampilkanMerkBan(string merk)
+        {
+            Console.WriteLine("Mobil ini menggunakan ban merk " + merk);
+        }
+    }
+    class Michelin : Ban
+    {
+        public Michelin()
+        {
+            merk = "Michelin";
+            TampilkanMerkBan(merk);
+        }
+    }
+
+    class Bridgestone : Ban
+    {
+        public Bridgestone()
+        {
+            merk = "Bridgestone";
+
+        }
+    }
 
 
     internal class Program
